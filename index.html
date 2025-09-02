@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="icon" href="/build/img/icono.ico" type="image/x-icon">
+    <title>Lacteos La Estancia</title>
+</head>
+<body>
+
+<!-- Header -->
+    <header class="header">
+        <img class="imagen-logo" src="/build/img/logo.webp" alt="Imagen-Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="navegacion-principal" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <a href="#inicio" class="nav__link nav__link__active" id="Home-nav">Inicio</a>
+            <a href="#sobre-nosotros" class="nav__link" id="Sobremi-nav">Sobre Nosotros</a>
+            <a href="#productos" class="nav__link" id="Proyectos-nav">Productos</a>
+            <a href="#reparto" class="nav__link " id="Home-nav">Reparto</a>
+            <a href="#contacto" class="nav__link" id="Contacto-nav">Contacto</a>
+        </nav>
+    </header>
+    <main>
+<!-- Seccion Inicio -->
+        <section class="inicio" id="inicio">
+            <div class="contenedor-inicio">
+                <h1>Lacteos La Estancia</h1>
+                <p>La calidad de lo bueno</p>
+            </div>
+        </section>
+<!-- Seccion Nosotros -->
+<section class="sobre-nosotros" id="sobre-nosotros">
+    <div class="contenedor-info-sobre-nosotros">
+        <div class="imagenes-sobre-nosotros">
+            <div class="slider">
+                <div class="slide active">
+                    <img class="imagen-sobre-nosotros" src="/build/img/imagen-quesos.webp" alt="imagen-sobre-nosotros">
+                    
+                </div>
+                <div class="slide">
+                    <img class="imagen-sobre-nosotros" src="/build/img/imagen-quesos-2.webp" alt="imagen-sobre-nosotros-2">
+                </div>
+
+                <!-- Agrega más imágenes aquí -->
+                <div class="slider-indicators special special2 special3">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <!-- Agrega más indicadores aquí -->
+                </div>
+            </div>
+        </div>
+        <div class="texto-sobre-nosotros">
+            <h1>Sobre Nosotros</h1>
+            <p>En La Estancia, llevamos 50 años dedicados a la producción de quesos artesanales de la más alta calidad. Nuestra tradición familiar y nuestro compromiso con la excelencia nos han convertido en un referente en el mercado.</p>
+            <a href="/nosotros.html" class="boton-sobre-nosotros">Mas sobre Nosotros</a>
+        </div>
+    </div>
+</section>
+<!-- Seccion Productos -->
+        <section class="productos" id="productos">
+            <h1>Nuestros Productos</h1>
+            <div class="contenedor-productos special">
+                <div class="Producto">
+                    <div class="contenedor-imagen">
+                        <img src="/build/img/queso cremoso.webp" height="200px" width="200px" class="imagen-producto" alt="">
+                    </div>  
+                    <h1>Queso Cremoso</h1>
+                    <p>Producto de muy alta humedad, elaborado con leche estandarizada</p>                
+                </div>
+                <div class="Producto">  
+                    <div class="contenedor-imagen">
+                        <img src="/build/img/ricota.webp" class="imagen-producto-ricota" alt="">
+                    </div>
+                    <h1>Ricota</h1>
+                    <p>Ideal para consumirlo en recetas de pasteleria o similares.</p>
+                </div>
+                <div class="Producto">
+                    <div class="contenedor-imagen">
+                        <img src="/build/img/queso sardo.webp" class="imagen-producto" alt="">
+                    </div>
+                    <h1>Queso Sardo</h1>
+                    <p>Queso de pasta dura, fina y picante. Se caracteriza por su sabor bien desarrollado y su aroma fuerte..</p>
+                </div>
+                <div class="Producto">  
+                    <div class="contenedor-imagen">
+                        <img src="/build/img/queso tybo.webp" class="imagen-producto" alt="">
+                    </div>
+                    <h1>Queso Tybo</h1>
+                    <p>Queso de mediana humedad y semigraso.</p>                
+                </div>
+                <div class="Producto">
+                    <div class="contenedor-imagen">  
+                        <img src="/build/img/mozarella.webp" class="imagen-producto" alt="">
+                    </div>
+                    <h1>Queso Mozzarella</h1>
+                    <p>Tipo de queso de color blanco amarillento y de textura suave. Ideal para pizzas</p>
+                </div>
+                <div class="Producto">  
+                    <div class="contenedor-imagen">
+                        <img src="/build/img/crema.webp" class="imagen-producto" alt="">
+                    </div>
+                    <h1>Crema</h1>
+                    <p>Suave, ideal para pastas.</p>
+                </div>
+                <div class="Producto">  
+                    <div class="contenedor-imagen">
+                        <img src="/build/img/manteca.webp" class="imagen-producto" alt="">
+                    </div>
+                    <h1>Manteca</h1>
+                    <p>Producto obtenido por el batido, amasado y posterior maduración de la crema. Ideal para el desayuno o la merienda</p>
+                </div>
+            </div>
+        </section>
+<!-- Seccion Reparto -->
+        <section class="sobre-nosotros" id="reparto">
+            <div class="contenedor-info-sobre-reparto">
+                <div class="texto-sobre-reparto">
+                    <h1>Reparto</h1>
+                    <p> <strong>Lunes</strong> de  <strong>8:00 a 12:00</strong> y de <strong>16:00 a 20:00</strong></p>
+                    <p> <strong>Miercoles</strong> de  <strong>8:00 a 12:00</strong> y de <strong>16:00 a 20:00</strong></p>
+                    <p> <strong>Viernes</strong> de  <strong>8:00 a 12:00</strong> y de <strong>16:00 a 20:00</strong></p>
+                </div>
+                <div class="imagen-reparto">
+                    <img src="/build/img/reparto.webp" class="imagen-sobre-reparto" alt="">
+                </div>
+            </div>
+        </section>
+<!-- Seccion Contacto -->
+        <section class="contacto" id="contacto">
+            <div class="contacto-container">
+                <h1>
+                    Contactanos
+                </h1>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3367.509294990172!2d-63.2566!3d-32.4323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc4307305464d5%3A0x9ea4c72ab8cb27cf!2sBosque%20de%20Cald%C3%A9n%2040%2C%20Villa%20Nueva%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1722977599924!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="info-contacto-container">
+                    <p>Direccion:</p>
+                    <p>Bosque de Caldén 40, Villa Nueva, Córdoba, Argentina</p>
+                    <p>Telefono:</p>
+                    <p class="numero">+54 9 3534 22-5418</p>
+                    <p>Correo:</p>
+                    <p>
+                        <a class="mail" href="mailto:lacteoslaestancia5@gmail.com">lacteoslaestancia5@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<!-- Seccion Footer -->
+        <footer class="footer">
+            <div class="contenedor-footer">
+                <p>© Todos los derechos reservados La Estancia</p>
+                <img class="imagen-footer" src="/build/img/logo.webp" alt="">
+                <div class="redes">
+                    <a href="https://wa.me/5493534225418?text=Quiero%20más%20información" class="redes__link"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556122650988&locale=es_LA" target="_blank"  class="redes__link"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/lacteoslaestancia/" target="_blank" class="redes__link"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="/build/js/app.js"></script>
+</html>

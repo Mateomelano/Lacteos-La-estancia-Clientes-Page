@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>Fabrica</title>
+</head>
+<body>
+
+<!-- Header -->
+    <header class="header">
+        <img class="imagen-logo" src="/build/img/logo.webp" alt="Imagen-Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="navegacion-principal" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <a href="/index.html" class="nav__link" id="Home-nav">Inicio</a>
+            <a href="/index.html" class="nav__link nav__link__active" id="Sobremi-nav">Sobre Nosotros</a>
+            <a href="/index.html" class="nav__link" id="Proyectos-nav">Productos</a>
+            <a href="/index.html" class="nav__link" id="Proyectos-nav">Reparto</a>
+            <a href="/index.html" class="nav__link" id="Contacto-nav">Contacto</a>
+        </nav>
+    </header>
+    <main>
+<!-- Seccion nosotros page -->
+        <div class="nosotros-page"></div>
+
+        <div class="container-nosotros">
+            <div class="content">
+                <h1>Del interior del interior al mundo</h1>
+                <div class="section-content">
+                    <span class="section-title">50 años de historia.</span>
+                    <p>Nacidos y criados en la localidad de Villa Nueva, Cordoba, ya van más de 5 décadas de producción sostenible y de calidad.</p>
+                </div>
+                <div class="section-content">
+                    <h2>Responsabilidad Social</h2>
+                    <p>Venimos del llano, por eso entendemos el esfuerzo, dedicación y constancia para poder desarrollarse. Esto nos lleva a estar siempre comprometidos con nuestra sociedad, buscando siempre la forma de ayudar y dar soporte a quien necesita.</p>
+                </div>
+                <div class="section-content">
+                    <h2>Compromiso Sustentable</h2>
+                    <p>Hablamos de compromiso sustentable desde muchas de nuestras áreas:</p>
+                    <ul>
+                        <li><strong>Cadena Comercial:</strong> Contamos con una cadena comercial extensa en todo el país. Respetamos políticas de comercialización y damos soporte necesario para el crecimiento de nuestros socios comerciales.</li>
+                        <li><strong>Recursos Humanos:</strong> Entendemos que nuestra historia y crecimiento, está ligado al compromiso que cada uno de nuestros recursos humanos tiene con nosotros, es por eso que prestamos atención a sus necesidades y bienestar.</li>
+                        <li><strong>Consumo Saludable:</strong> Somos una empresa láctea y de gran impacto en la sociedad, por esto somos muy exigentes con nuestros proveedores y en la calidad de cada materia prima que usamos para la fabricación y comercialización de nuestros productos. Higiene y seguridad son ejes primordiales en todo el proceso productivo.</li>
+                        <li><strong>Medio ambiente:</strong> Nos nutrimos de nuestro medio ambiente y el cuidado de este nos permite desarrollarnos, sin duda es el pilar fundamental para nuestro crecimiento y desarrollo. Contamos con estrictas políticas de cuidado y preservación cada recurso que utilizamos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="/index.html"><img src="/build/img/banner1.webp" class="banner" alt="Conocé nuestros productos"></a>
+            </div>
+        </div>
+
+<!-- Seccion Footer -->
+        <footer class="footer">
+            <div class="contenedor-footer">
+                <p>© Todos los derechos reservados La Estancia</p>
+                <img class="imagen-footer" src="/build/img/logo.webp" alt="">
+                <div class="redes">
+                    <a href="" class="redes__link"><i class="bi bi-whatsapp"></i></a>
+                    <a href="" class="redes__link"><i class="bi bi-facebook"></i></a>
+                    <a href="" class="redes__link"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+<script src="/build/js/nosotros.js"></script>
+</html>
