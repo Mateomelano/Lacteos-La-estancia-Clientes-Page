@@ -6,7 +6,7 @@ header('Content-Type: application/json');
 $q = isset($_GET['q']) ? $conn->real_escape_string($_GET['q']) : '';
 $habilitadoFiltro = isset($_GET['habilitado']) && $_GET['habilitado'] !== '' ? (int) $_GET['habilitado'] : null;
 
-$sql = "SELECT id, nombre, descripcion, imagen, habilitado FROM productos";
+$sql = "SELECT id, nombre, descripcion, imagen, habilitado FROM productos WHERE habilitado = 1";
 $filtros = [];
 
 if (!empty($q)) {

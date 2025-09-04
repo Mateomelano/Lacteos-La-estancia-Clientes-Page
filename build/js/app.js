@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // ✅ Mover esta función arriba
+  debugger
   function cargarProductosDesdePHP() {
     debugger
     fetch("src/php/get_productos.php")
